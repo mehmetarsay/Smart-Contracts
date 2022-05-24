@@ -3,11 +3,11 @@ Smart Contracts, alıcı ve satıcı arasındaki sözleşmenin şartlarının do
 
 #### İlk Smart-Contracts yazalım
 
-######1-) [Remix Ide'ye](https://remix.ethereum.org/) gidin ve [AssociateProfitSplitter.sol](linkgir.org) kodunu kullanarak yeni bir sözleşme oluşturuyoruz.
+1-) [Remix Ide'ye](https://remix.ethereum.org/) gidin ve [AssociateProfitSplitter.sol](linkgir.org) kodunu kullanarak yeni bir sözleşme oluşturuyoruz.
 
 ![alt text](/assets/1.png "1. adım")
 
-######2-) Sözleşmemizin testlerini yapmak için, [Ganache](https://www.trufflesuite.com/ganache) kullanacağız. Kurulumu yaptıktan sonra karşımıza aşağıdaki gibi bir ekran gelecektir.
+2-) Sözleşmemizin testlerini yapmak için, [Ganache](https://www.trufflesuite.com/ganache) kullanacağız. Kurulumu yaptıktan sonra karşımıza aşağıdaki gibi bir ekran gelecektir.
 
 ![alt text](/assets/2.png "Ganache açılış ekranı")
 
@@ -35,24 +35,22 @@ Hesabı içe aktarmak için yukarıda kullanılan private key kullanılmalıdır
 
 Kopyalanan private key ile hesap içeri aktarılmalıdır.
 
-######3-) Proje compile edilme aşamasına geldik. Soldaki menüden yazılan ilk contracts compile edilmelidir. Bu işlemde kodda hata olup olmadığı işlemi yapılır. Deploy işlemleri bir sonraki aşamada yapılacaktır.
+3-) Proje compile edilme aşamasına geldik. Soldaki menüden yazılan ilk contracts compile edilmelidir. Bu işlemde kodda hata olup olmadığı işlemi yapılır. Deploy işlemleri bir sonraki aşamada yapılacaktır.
 
 <img src="/assets/11.png" width="600" height="250">
 
-######4-) Deploy için ENVIRONMENT kısmı aşağıdaki gibi yapılmalıdır. Metamask bağlanmak için web3 kullanmamız gerekmektedir. Bunun için Injected web3 seçiyoruz. Hesabımız otomatik olarak account kısmına eklenecektir.
+4-) Deploy için ENVIRONMENT kısmı aşağıdaki gibi yapılmalıdır. Metamask bağlanmak için web3 kullanmamız gerekmektedir. Bunun için Injected web3 seçiyoruz. Hesabımız otomatik olarak account kısmına eklenecektir.
 
 
 <img src="/assets/12.png" width="300" height="250">
 
 
-######5-) Deploy edilecek hesaplar Ganache üzerinden alınarak buraya public adresleri yapıştırılmalıdır. Daha sonra transact işlemi gerçekleştirilebilir.
+5-) Deploy edilecek hesaplar Ganache üzerinden alınarak buraya public adresleri yapıştırılmalıdır. Daha sonra transact işlemi gerçekleştirilebilir.
 
 <img src="/assets/13.png" width="600" height="250">
 
-######6-) Transact işlemi onaylanınca yazılan contract deploy aşaması tamamlanmıştır. Artık sözleşme blockchain zincirine eklendi. Bu işlem artık geri alınamaz ve sonuçları sadece izin verilen kullanıcılara gösterilir.
+6-) Transact işlemi onaylanınca yazılan contract deploy aşaması tamamlanmıştır. Artık sözleşme blockchain zincirine eklendi. Bu işlem artık geri alınamaz ve sonuçları sadece izin verilen kullanıcılara gösterilir.
 
-<img src="/assets/14.png" width="200" height="150">
-
-######Sonuç: Contract artık oluşturuldu. Deposit yaparak girilen value değeri public adresi girilen kullanıcılara bölüştürülür ve gönderilir. Gönderme sırasında kullanılan enerji ve maliyet kesintileri de olmaktadır.
+Sonuç: Contract artık oluşturuldu. Deposit yaparak girilen value değeri public adresi girilen kullanıcılara bölüştürülür ve gönderilir. Gönderme sırasında kullanılan enerji ve maliyet kesintileri de olmaktadır.
 
 <img src="/assets/15.png" width="500" height="250">
