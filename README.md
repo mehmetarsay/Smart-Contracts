@@ -47,7 +47,7 @@ Kopyalanan private key ile hesap içeri aktarılmalıdır.
 
 5-) Deploy edilecek hesaplar Ganache üzerinden alınarak buraya public adresleri yapıştırılmalıdır. Daha sonra transact işlemi gerçekleştirilebilir.
 
-<img src="/assets/13.png" width="600" height="250">
+<img src="/assets/13.png" width="800" height="450">
 
 6-) Transact işlemi onaylanınca yazılan contract deploy aşaması tamamlanmıştır. Artık sözleşme blockchain zincirine eklendi. Bu işlem artık geri alınamaz ve sonuçları sadece izin verilen kullanıcılara gösterilir.
 
