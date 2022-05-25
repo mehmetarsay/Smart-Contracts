@@ -3,7 +3,7 @@ Smart Contracts, alıcı ve satıcı arasındaki sözleşmenin şartlarının do
 
 #### İlk Smart-Contracts yazalım
 
-1-) [Remix Ide'ye](https://remix.ethereum.org/) gidin ve [AssociateProfitSplitter.sol](https://github.com/Corey-Recai/smart-contracts-with-solidity-homework/blob/master/AssociateProfitSplitter.sol) kodunu kullanarak yeni bir sözleşme oluşturuyoruz.
+1-) [Remix Ide'ye](https://remix.ethereum.org/) gidin ve [AssociateProfitSplitter.sol](https://github.com/mehmetarsay/Smart-Contracts/blob/main/AssociateProfitSplitter.sol) kodunu kullanarak yeni bir sözleşme oluşturuyoruz.
 
 ![alt text](/assets/1.png "1. adım")
 
@@ -54,3 +54,6 @@ Kopyalanan private key ile hesap içeri aktarılmalıdır.
 Sonuç: Contract artık oluşturuldu. Deposit yaparak girilen value değeri public adresi girilen kullanıcılara bölüştürülür ve gönderilir. Gönderme sırasında kullanılan enerji ve maliyet kesintileri de olmaktadır.
 
 <img src="/assets/15.png" width="500" height="250">
+
+
+Not: Bu yazının bazı kısımları [Corey-Recai](https://github.com/Corey-Recai/smart-contracts-with-solidity-homework) hesabından alınmıştır.
