@@ -25,8 +25,8 @@ Ganache işlemlerini yaptıktan sonra bu hesabımızı metamask üzerine aktarma
 
 Metamask işlemleri yukarıda gösterilen fotoğraflardaki gibidir. Öncelikle localhosttaki ağ seçilir daha sonra hesap içe aktarılır.
 
-<img src="/assets/7.png" width="600" height="250">
-<img src="/assets/8.png" width="600" height="250">
+<img src="/assets/7.png" width="800" height="400">
+<img src="/assets/8.png" width="800" height="400">
 
 Hesabı içe aktarmak için yukarıda kullanılan private key kullanılmalıdır.
 
