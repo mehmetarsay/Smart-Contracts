@@ -138,7 +138,7 @@ Bu işlemi hızlandırmak için fakenow yapıyoruz. Tekrar distribute çalışt�
 
 Fakenow 4 defa üst üste çalıştırınca 4 yıl yapacağından artık bütün hisseleri alabiliriz.
 
-<img src="/assets/21.png" width="300" height="300">
+<img src="/assets/22.png" width="300" height="300">
 
 
 
