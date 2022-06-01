@@ -56,4 +56,90 @@ Sonuç: Contract artık oluşturuldu. Deposit yaparak girilen value değeri publ
 <img src="/assets/15.png" width="500" height="250">
 
 
+#### SEVİYE-2 Smart Contract Geliştirelim
+
+Bu aşamada yapacağımız şey ilk kısımda gösterilen kodu biraz değiştirerek hesaplara farklı miktarlarda ücretler göndermek olacak.
+
+[AssociateProfitSplitter.sol](https://github.com/mehmetarsay/Smart-Contracts/blob/main/AssociateProfitSplitter.sol) kodumuzda toplam tutar üçe bölünmüştü yeni yazacağımız deposit fonksiyonunda bu oran kişilere göre farklılık gösterecek.
+
+Fonksiyonumuzu yazmaya başlayalım.
+
+```
+function deposit() public payable {
+        uint points = msg.value / 100; 
+        uint total;
+        uint amount;
+
+       amount = points * 50;
+       total += amount;
+       employee_one.transfer(amount);
+
+       amount = points * 40;
+       total += amount;
+       employee_two.transfer(amount);
+
+
+       amount = points * 10;
+       total += amount;
+       employee_three.transfer(amount);
+       
+       employee_one.transfer(msg.value - total);
+    
+    }
+```
+
+Fonksiyonumuzda görüldüğü üzere toplam tutar önce 100'e bölündü daha sonra alacakların yüzdelerine göre dağıtım işlemi gerçekleştirildi.
+
+Örnek:
+50 ETH 3 kişi arasında %50, %40 ve %10 oranlara dağıtılma işlemi aşağıda gerçekleştirilmiştir.
+
+<img src="/assets/16.png" width="500" height="250">
+
+<img src="/assets/17.png" width="500" height="250">
+
+kodun detayına [TieredProfitSplitter.sol](/TieredProfitSplitter.sol) dosyasından bakabilirsiniz.
+
+.
+
+
+#### SEVİYE-3 Smart Contract Geliştirelim
+
+
+
+
+Bu kısımda şirketler tarafından yıllara göre paylaşılmış hisse senetlerinin contract haline getirilip işlenmesini inceleyeceğiz. 
+
+Kodlarımız [DeferredEquityPlan](/DeferredEquityPlan.sol) içinde bulunuyor buradan inceleyebilirsiniz.
+
+Bu koddaki amacımız elimizdeki 1000 hisseyi her sene  250 olacak şekilde 4 yıl içinde dağıtmak. Başlangıç tarihini bu gün olarak belirliyoruz.
+
+-> Test etmek için fakenow() fonksiyonununu zamanı hızlandırmak için kullanacağız. 
+
+-> Hisseleri dağıtma işlemi için distribute() fonksiyonunu çalıştıracağız.
+
+-> distributed_shares ile anlık hisse değerimizi göreceğiz.
+
+İlk önce kodumuzu compile ediyoruz ve daha sonra metamask hesabını bağlıyoruz.Employe kısmına key giriyoruz.
+
+<img src="/assets/18.png" width="500" height="250">
+
+İlk baktığımızda hisselerimizn 0 olduğunu görürüz.
+
+<img src="/assets/19.png" width="300" height="300">
+
+Süre dolmadan distribute yaptığımızda hata vericektir. Çünkü hisseleri kazanmak için yeterli kadar çalışmadık.
+
+
+<img src="/assets/20.png" width="500" height="250">
+
+Bu işlemi hızlandırmak için fakenow yapıyoruz. Tekrar distribute çalıştırdığımızda ilk hisselerimizi almış olacağız.
+
+<img src="/assets/21.png" width="500" height="250">
+
+Fakenow 4 defa üst üste çalıştırınca 4 yıl yapacağından artık bütün hisseleri alabiliriz.
+<img src="/assets/21.png" width="500" height="250">
+
+
+
+
 Not: Bu yazının bazı kısımları [Corey-Recai](https://github.com/Corey-Recai/smart-contracts-with-solidity-homework) hesabından alınmıştır.
