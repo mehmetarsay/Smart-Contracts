@@ -1,9 +1,9 @@
 # Smart-Contracts
 Smart Contracts, alıcı ve satıcı arasındaki sözleşmenin şartlarının doğrudan kod satırlarına yazıldığı, kendi kendini yürüten bir sözleşmedir. Kod ve içerdiği anlaşmalar, dağıtılmış, merkezi olmayan bir blok zinciri ağında bulunur. Kod, yürütmesi kontrol edilebilir, işlemler izlenebilir ve geri alınamaz..
 
-#### İlk Smart-Contracts yazalım
+#### SEVİYE-1 İlk Smart-Contracts yazalım
 
-1-) [Remix Ide'ye](https://remix.ethereum.org/) gidin ve [AssociateProfitSplitter.sol](https://github.com/mehmetarsay/Smart-Contracts/blob/main/AssociateProfitSplitter.sol) kodunu kullanarak yeni bir sözleşme oluşturuyoruz.
+1-) [Remix Ide'ye](https://remix.ethereum.org/) gidin ve [AssociateProfitSplitter.sol](https://github.com/mehmetarsay/Smart-Contracts/blob/main/AssociateProfitSplitter.sol) kodunu kullanarak yeni bir sözleşme oluşturuyoruz. Oluşturacağımız bu sözleşme 3 ortak arasında ücretin eşit bir şekilde dağıtılmasını içerecek.
 
 ![alt text](/assets/1.png "1. adım")
 
