@@ -113,11 +113,50 @@ Kodlarımız [DeferredEquityPlan](/DeferredEquityPlan.sol) içinde bulunuyor bur
 
 Bu koddaki amacımız elimizdeki 1000 hisseyi her sene  250 olacak şekilde 4 yıl içinde dağıtmak. Başlangıç tarihini bu gün olarak belirliyoruz.
 
--> Test etmek için fakenow() fonksiyonununu zamanı hızlandırmak için kullanacağız. 
+-> Test etmek için fastforwarf() fonksiyonununu zamanı hızlandırmak için kullanacağız. 
+
+```
+
+    function fastforward() public {
+        fakenow += 366 days;
+    }
+
+```
+
 
 -> Hisseleri dağıtma işlemi için distribute() fonksiyonunu çalıştıracağız.
 
+```
+...
+    function distribute() public {
+        require(msg.sender == human_resources || msg.sender == employee, "Bu contractı çalıştırma yetkiniz yok");
+        require(active == true, "Contract not active.");
+
+        require(unlock_time <=fakenow, "Hisseler daha kazanılmamış");
+
+        require(distributed_shares < total_shares, "Tüm hisseler dağıtıldı.");
+
+        unlock_time += 365 days;
+
+        //Dağıtılan payları hesaplama
+        distributed_shares = ((fakenow - start_time) / 365 days * annual_distribution);
+
+        if (distributed_shares > 1000) {
+            distributed_shares = 1000;
+        }
+    }
+    
+    ...
+    
+```
+
 -> distributed_shares ile anlık hisse değerimizi göreceğiz.
+
+```
+ uint public distributed_shares; 
+
+
+```
 
 İlk önce kodumuzu compile ediyoruz ve daha sonra metamask hesabını bağlıyoruz.Employe kısmına key giriyoruz.
 
