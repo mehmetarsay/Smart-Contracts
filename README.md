@@ -3,7 +3,7 @@ Smart Contracts, alıcı ve satıcı arasındaki sözleşmenin şartlarının do
 
 #### SEVİYE-1 İlk Smart-Contracts yazalım
 
-1-) [Remix Ide'ye](https://remix.ethereum.org/) gidin ve [AssociateProfitSplitter.sol](https://github.com/mehmetarsay/Smart-Contracts/blob/main/AssociateProfitSplitter.sol) kodunu kullanarak yeni bir sözleşme oluşturuyoruz. Oluşturacağımız bu sözleşme 3 ortak arasında ücretin eşit bir şekilde dağıtılmasını içerecek.
+1-) [Remix Ide'ye](https://remix.ethereum.org/) gidin ve [AssociateProfitSplitter.sol](https://github.com/mehmetarsay/Smart-Contracts/blob/main/AssociateProfitSplitter.sol) kodunu kullanarak yeni bir sözleşme oluşturacağız. Oluşturacağımız bu sözleşme 3 ortak arasında ücretin eşit bir şekilde dağıtılmasını içerecek.
 
 ![alt text](/assets/1.png "1. adım")
 
