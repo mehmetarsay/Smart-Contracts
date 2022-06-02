@@ -171,11 +171,11 @@ Süre dolmadan distribute yaptığımızda hata vericektir. Çünkü hisseleri k
 
 <img src="/assets/20.png" width="500" height="250">
 
-Bu işlemi hızlandırmak için fakenow yapıyoruz. Tekrar distribute çalıştırdığımızda ilk hisselerimizi almış olacağız.
+Bu işlemi hızlandırmak için fastforward yapıyoruz. Tekrar distribute çalıştırdığımızda ilk hisselerimizi almış olacağız.
 
 <img src="/assets/21.png" width="300" height="300">
 
-Fakenow 4 defa üst üste çalıştırınca 4 yıl yapacağından artık bütün hisseleri alabiliriz.
+fastforward 4 defa üst üste çalıştırınca 4 yıl yapacağından artık bütün hisseleri alabiliriz.
 
 <img src="/assets/22.png" width="300" height="300">
 
